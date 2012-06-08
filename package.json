@@ -1,0 +1,23 @@
+{
+  "author": "A Bunch of Awesome People",
+  "name": "this-game-has-no-name",
+  "description": "A yet unnamed game",
+  "version": "0.0.1",
+  "homepage": "",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "engines": {
+    "node": "~0.6.11"
+  },
+  "dependencies": {
+    "express": "3.0",
+    "connect-assetmanager": "0.0.27",
+
+    "coffee-script": "1.3.3",
+    "sass": "git://github.com/ckhampus/node-sass.git",
+
+    "faye": "0.8.2"
+  }
+}
