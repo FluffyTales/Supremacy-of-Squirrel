@@ -2,6 +2,8 @@
 
 **A FluffyTales Production**
 
+![Supremacy of Squirrel](https://github.com/FluffyTales/Supremacy-of-Squirrel/raw/master/public/images/logo.png)
+
 ## Getting Started
 
 *Warning: This is our very first Node.js application. We don't know if the way we setup the folder structure would offend a Node.js Developer. Feedback encouraged :)*
