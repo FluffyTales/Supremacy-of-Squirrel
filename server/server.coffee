@@ -1,3 +1,4 @@
+http         = require "http"
 faye         = require "faye"
 express      = require "express"
 coffee       = require "coffee-script"
@@ -54,7 +55,10 @@ server.use assetManager
 
 server.use (express.static publicDir)
 
-server.listen 8080
+# Wrapper for the server in order to attach Bayeux:
+
+server_wrapper = http.createServer server
+server_wrapper.listen 8080
 
 # Starting the Bayeux Server:
 
@@ -62,8 +66,7 @@ bayeux = new faye.NodeAdapter
   mount: "/faye"
   timeout: 45
 
-bayeux.attach(server)
-bayeux.listen 8000
+bayeux.attach server_wrapper
 
 # Only for Logging:
 
