@@ -10,10 +10,10 @@ init = ->
   context = context(canvas)
   canvas.width = 1024
   canvas.height = 768
-  stage = new Stage canvas
+  stage = new Stage(canvas)
   stage.autoClear = true
 
-  stage.addChild(new Text 'Hello there! (Canvas)', '36px Arial', '#777')
+  stage.addChild(new Text('Hello there! (Canvas)', '36px Arial', '#777777'))
 
   stage.update()
 

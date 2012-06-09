@@ -37,7 +37,12 @@ server.use assetManager
     route: /\/vendor\.js/
     path: "#{vendorDir}js/"
     dataType: 'javascript'
-    files: ['*']
+    files: ['*',
+      'easeljs/geom/Matrix2D.js',
+      'easeljs/utils/UID.js',
+      'easeljs/display/DisplayObject.js',
+      'easeljs/display/Container.js',
+      'easeljs/display/Stage.js']
 
   custom_css:
     route: /\/app\.css/
