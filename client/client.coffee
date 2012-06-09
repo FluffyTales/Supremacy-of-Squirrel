@@ -1,4 +1,4 @@
-window.client = new Faye.Client 'http://localhost:8000/faye'
+window.client = new Faye.Client 'http://192.168.1.45:8000/faye'
 		  
 client.subscribe '/global', (message) ->
   output = document.getElementById "output"

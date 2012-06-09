@@ -1,12 +1,12 @@
 {
-  "author": "A Bunch of Awesome People",
-  "name": "this-game-has-no-name",
-  "description": "A yet unnamed game",
+  "author": "FluffyTales",
+  "name": "Supremacy of Squirrel",
+  "description": "Supremacy of Squirrel - The Game",
   "version": "0.0.1",
-  "homepage": "",
+  "homepage": "https://github.com/FluffyTales/Supremacy-of-Squirrel",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "git://github.com/FluffyTales/Supremacy-of-Squirrel.git"
   },
   "engines": {
     "node": "~0.6.11"
