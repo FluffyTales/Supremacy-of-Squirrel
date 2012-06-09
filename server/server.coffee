@@ -30,6 +30,7 @@ server.use assetManager
     path: coffeeDir
     dataType: 'javascript'
     files: ['control/touch.coffee', '*']
+    debug: true
     preManipulate:
       '^': [coffeeRenderer]
 
@@ -43,6 +44,7 @@ server.use assetManager
       'easeljs/display/DisplayObject.js',
       'easeljs/display/Container.js',
       'easeljs/display/Stage.js']
+    debug: true
 
   custom_css:
     route: /\/app\.css/
