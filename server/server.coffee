@@ -30,6 +30,7 @@ server.use assetManager
     path: coffeeDir
     dataType: 'javascript'
     files: ['control/touch.coffee', '*']
+    debug: true
     preManipulate:
       '^': [coffeeRenderer]
 
@@ -37,6 +38,7 @@ server.use assetManager
     route: /\/vendor\.js/
     path: "#{vendorDir}js/"
     dataType: 'javascript'
+    debug: true
     files: ['*']
 
   custom_css:
