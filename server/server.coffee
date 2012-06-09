@@ -29,7 +29,7 @@ server.use assetManager
     route: /\/app\.js/
     path: coffeeDir
     dataType: 'javascript'
-    files: ['*']
+    files: ['control/touch.coffee', '*']
     preManipulate:
       '^': [coffeeRenderer]
 

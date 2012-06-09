@@ -29,6 +29,7 @@
 * [Faye](http://faye.jcoglan.com/): Pub/Sub for Node.js and the Browser
 * [domready](https://github.com/ded/domready): Calls a function, when the DOM is ready
 * [keymaster](https://github.com/madrobby/keymaster): The best tool for getting keyboard input
+* [Hammer.js](https://github.com/eightmedia/hammer.js): A javascript library for multi-touch gestures
 
 ## Credits
 
