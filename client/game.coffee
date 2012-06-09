@@ -11,9 +11,16 @@ init = ->
   canvas.width = 1024
   canvas.height = 768
   stage = new Stage(canvas)
-  stage.autoClear = true
 
-  stage.addChild(new Text('Hello there! (Canvas)', '36px Arial', '#777777'))
+  stage.onMouseMove = ->
+    console.log "mouse moved"
+  stage.onMouseDown = ->
+    console.log "mouse down"
+
+  txt = new Text('Hello there from Canvas', "bold 14px Arial", '#FFF')
+  txt.x = 200
+  txt.y = 100
+  stage.addChild(txt)
 
   stage.update()
 

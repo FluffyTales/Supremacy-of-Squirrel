@@ -39,11 +39,13 @@ server.use assetManager
     path: "#{vendorDir}js/"
     dataType: 'javascript'
     files: ['*',
-      'easeljs/geom/Matrix2D.js',
       'easeljs/utils/UID.js',
+      'easeljs/geom/Matrix2D.js',
       'easeljs/display/DisplayObject.js',
       'easeljs/display/Container.js',
-      'easeljs/display/Stage.js']
+      'easeljs/display/Stage.js',
+      'easeljs/events/MouseEvent.js',
+      'easeljs/display/Text.js']
     debug: true
 
   custom_css:
