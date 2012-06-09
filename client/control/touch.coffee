@@ -1,5 +1,10 @@
 domready ->
-  hammer = new Hammer (document.getElementById "touch-control-overlay")
+  overlay = document.getElementById "touch-control-overlay"
+  hammer = new Hammer overlay
 
   hammer.ondragend = (ev) ->
-    client.publish '/global', text: "#{ev.direction}: #{Math.floor ev.distance}"
+    direction_info = switch ev.direction
+      when "left", "right" then "#{ev.direction}: #{Math.floor ((ev.distance / overlay.clientWidth) * 100)}%"
+      when "up", "down" then "#{ev.direction}: #{Math.floor ((ev.distance / overlay.clientHeight) * 100)}%"
+
+    client.publish '/global', text: direction_info
