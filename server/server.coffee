@@ -45,6 +45,7 @@ server.use assetManager
       'easeljs/display/Container.js',
       'easeljs/display/Stage.js',
       'easeljs/events/MouseEvent.js',
+      'easeljs/utils/Ticker.js',
       'easeljs/display/Text.js']
     debug: true
 

@@ -1,9 +1,18 @@
 
+window.tick = (timeElapsed) ->
+   # do nothing for now
+   #console.log "HALLO #{timeElapsed}"
+   stage.clear()
+
+   stage.update()
+
 canvas = ->
   document.getElementById "gameCanvas"
 
 context = (canvas) ->
   canvas.getContext '2d'
+
+stage = null
 
 init = ->
   canvas = canvas()
@@ -22,7 +31,8 @@ init = ->
   txt.y = 100
   stage.addChild(txt)
 
-  stage.update()
+  Ticker.setFPS 60
+  Ticker.addListener(window)
 
 
 domready ->
