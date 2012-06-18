@@ -48,6 +48,7 @@ server.use assetManager
       'easeljs/display/Shape.js',
       'easeljs/display/Graphics.js',
       'easeljs/display/SpriteSheet.js',
+      'easeljs/utils/SpriteSheetUtils.js',
       'easeljs/display/BitmapAnimation.js',
       'easeljs/events/MouseEvent.js',
       'easeljs/utils/Ticker.js',
