@@ -38,21 +38,7 @@ server.use assetManager
     route: /\/vendor\.js/
     path: "#{vendorDir}js/"
     dataType: 'javascript'
-    files: ['*',
-      'easeljs/utils/UID.js',
-      'easeljs/geom/Matrix2D.js',
-      'easeljs/geom/Rectangle.js',
-      'easeljs/display/DisplayObject.js',
-      'easeljs/display/Container.js',
-      'easeljs/display/Stage.js',
-      'easeljs/display/Shape.js',
-      'easeljs/display/Graphics.js',
-      'easeljs/display/SpriteSheet.js',
-      'easeljs/utils/SpriteSheetUtils.js',
-      'easeljs/display/BitmapAnimation.js',
-      'easeljs/events/MouseEvent.js',
-      'easeljs/utils/Ticker.js',
-      'easeljs/display/Text.js']
+    files: ['*']
     debug: true
 
   custom_css:
